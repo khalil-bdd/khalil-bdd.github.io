@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+}
+header{
+    width: auto;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+nav{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+nav li{
+    display: inline-block;
+    margin: 0 50px;
+
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+article{
+    width: auto;
+    background-color: gray;
+    margin-top: 1%;
+    padding: 0 1%;
+}
+article img{
+    height: 100%;
+    border: solid;
+    border-color: black;
+    border-radius: 2%;
+}
+.lisa{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: white;
+    border-bottom: solid;
+    border-color: black;
+    padding: 5%;
+
+   
+}
+.lisa img{
+    margin-left: 1%;
+}
+.graffitis{
+    display: flex;
+    margin-top: 1%;
+    color: white;
+    border-top: solid;
+    border-color: black;
+    padding: 5%;
+}
+.graffitis img{
+    margin-right: 1%;
+}
+#commentaires{
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#commentaires input{
+    border-radius: 5px;
+}
+#message{
+    border-radius: 5px;
+    width: 50%;
+}
+.messages{
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+   
+    margin-top: 1%;
+}
