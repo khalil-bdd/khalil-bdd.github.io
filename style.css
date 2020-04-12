@@ -3,6 +3,10 @@
   margin: 0;
 }
 @font-face{
+  font-family: vollkorn;
+  src: url(Vollkorn_SC/VollkornSC-Black.ttf);
+}
+@font-face{
   font-family: "Gotu";
   src: url("Gotu/Gotu-Regular.ttf");
 }
@@ -14,11 +18,12 @@ body{
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
+  position: absolute;
 }
 .background{
   width: 100%;
   height: 100vh;
-  z-index: -10;
+  z-index: 0;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,0.8827906162464986) 0%, rgba(127,38,186,1) 30%, rgba(38,12,187,1) 75%, rgba(13,129,153,1) 100%);
   position: fixed;
@@ -29,11 +34,11 @@ nav{
   width: 80%;
   display: flex;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-family: vollkorn;
 }
 #iwjr{
   text-align: center;
-  color: rgb(195, 195, 195);
+  color: white;
   font-family: Gotu;
   margin-top: 10%;
   font-size: 100px;
@@ -44,21 +49,23 @@ nav ul{
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 100%
+  width: 100%;
+
 }
 nav a{
   color:  white;
-  text-decoration: underline;
   font-size: 25px; 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  text-decoration: none;
+  font-family: vollkorn;
+  text-shadow: 5px 2px #00000054;
 }
 nav a:hover{
  
   color: rgb(44, 161, 230);
-  text-decoration: none;
+  text-decoration: underline;
 }
 .mon-logo{
-  color:rgb(195, 195, 195);
+  color: white;
   display: flex;
   align-items: center;
   font-size: 30px;
@@ -134,7 +141,7 @@ article{
   width: 50%;
 }
 #moi{
-  background-color: #13140A ;
+  background-color: #202020;
   opacity: 0.7;
   color: #ffffff;
   margin-top: 21%;
@@ -249,9 +256,21 @@ footer{
   width: 100%;
   height: 50px;
   padding: 1%;
-  background-color: black;
+  background-color: #202020;
   color: white;
-  text-align: center;
-  text-decoration: underline;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#icones{
+  width:  50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#icones a{
+  color: white;
 }
